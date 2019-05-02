@@ -38,3 +38,9 @@ stages:
         pip install pytest pytest-azurepipelines
         pytest
       displayName: 'pytest'
+
+- stage: demo
+  jobs:
+  - job: demo
+    steps:
+      - script: echo Hello world!
