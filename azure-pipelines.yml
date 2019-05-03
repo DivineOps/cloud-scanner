@@ -13,8 +13,8 @@ pool:
   vmImage: $[ variables['vmImage'] ]
 strategy:
   matrix:
-    #Python27:
-      #python.version: '2.7'
+    Python27:
+      python.version: '2.7'
     #Python35:
       #python.version: '3.5'
     Python36:
@@ -43,3 +43,4 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
