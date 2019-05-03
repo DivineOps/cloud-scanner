@@ -24,6 +24,9 @@ strategy:
     Python37Mac:
       python.version: '3.7'
       vmImage: 'macos-latest'
+    Python37Windows:
+      python.version: '3.7'
+      vmImage: 'windows-latest'
 
 steps:
 - task: UsePythonVersion@0
